@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#items-nav{
+    animation: fadeIn 750ms forwards;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+@media (min-width: 100px) and (max-width: 873px){
+    #items-nav {
+        display: none;
+    }
+}
